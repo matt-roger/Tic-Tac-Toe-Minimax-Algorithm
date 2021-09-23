@@ -16,14 +16,14 @@ public class Game{
     public char aiMarker;
 
   public Game(boolean genBoard){
-    this.playerTurn = true;
+    this.playerTurn = false;
     this.round = 0;
     this.playerMarker = 'O';
     this.aiMarker = 'X';
 
     if(genBoard){
       gameInstructions();
-      genBoard();
+      placeMarker();
     }
 
   }
